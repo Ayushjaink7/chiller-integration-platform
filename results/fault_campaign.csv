@@ -1,0 +1,16 @@
+model_id,type,injected_fault,expected_code,native_code,detected,first_code,latency_s,tripped
+CEN-2000,centrifugal,sensor_failure,F01,CEN-101,1,F01,0,1
+CEN-2000,centrifugal,condenser_fan_failure,F02,CEN-204,1,F02,28,1
+CEN-2000,centrifugal,pump_failure,F03,CEN-207,1,F03,4,1
+CEN-2000,centrifugal,capacity_stuck_high,F06,CEN-512,1,F06,31,1
+CEN-2000,centrifugal,compressor_protection,F05,CEN-415,1,F05,4,1
+SCR-1000,screw,sensor_failure,F01,SCR-E01,1,F01,0,1
+SCR-1000,screw,condenser_fan_failure,F02,SCR-E12,1,F02,28,1
+SCR-1000,screw,pump_failure,F03,SCR-E15,1,F03,4,1
+SCR-1000,screw,capacity_stuck_high,F06,SCR-E24,1,F06,38,1
+SCR-1000,screw,compressor_protection,F05,SCR-E21,1,F05,8,1
+SRL-400,scroll,sensor_failure,F01,SRL-A1,1,F01,0,1
+SRL-400,scroll,condenser_fan_failure,F02,SRL-B3,1,F02,33,1
+SRL-400,scroll,pump_failure,F03,SRL-B4,1,F03,4,1
+SRL-400,scroll,capacity_stuck_high,F06,SRL-D9,1,F06,12,1
+SRL-400,scroll,compressor_protection,F05,SRL-D7,1,F05,19,1

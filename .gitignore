@@ -1,0 +1,16 @@
+# Build output
+build/
+out/
+cmake-build-*/
+.vs/
+
+# Runtime databases (re-created by the programs)
+data/*.db
+data/*.db-wal
+data/*.db-shm
+
+# Dashboard dependencies (dist/ is committed so the C++ server works without Node)
+dashboard/node_modules/
+
+# Prebuilt convenience binaries (rebuild from source instead of committing them)
+prebuilt/

@@ -1,0 +1,23 @@
+{
+  "name": "chiller-dashboard",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Operator dashboard for the Multi-Model Chiller Integration Platform",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource/barlow": "^5.1.0",
+    "@fontsource/barlow-semi-condensed": "^5.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.15.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.0"
+  }
+}

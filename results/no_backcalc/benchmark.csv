@@ -1,0 +1,4 @@
+model_id,type,undershoot_c,settling_s,peak_rise_c,recovery_s,steady_state_error_c,max_steady_error_c,rms_error_c,compressor_starts,energy_kwh,records
+CEN-2000,centrifugal,0.117,269,0.923,310,0.0168,0.069,0.3250,1,98.50,1500
+SCR-1000,screw,0.067,275,1.027,286,0.0154,0.056,0.3414,1,54.27,1500
+SRL-400,scroll,0.622,,2.165,898,0.2180,0.470,0.8715,11,28.90,1500

@@ -1,0 +1,34 @@
+{
+  "name": "startup_and_load_step_no_backcalc",
+  "description": "Same as scenario.json but with back-calculation anti-windup turned off, for comparison.",
+  "setpoint_c": 7.0,
+  "dt_s": 1.0,
+  "duration_s": 1500,
+  "seed": 42,
+  "pid": {
+    "kp": 25.0,
+    "ki": 0.15,
+    "kd": 0.0,
+    "actuator_feedback": false,
+    "tracking_time_s": 60.0
+  },
+  "load_profile": [
+    {
+      "time_s": 0,
+      "load_pct": 50
+    },
+    {
+      "time_s": 600,
+      "load_pct": 80
+    }
+  ],
+  "metrics": {
+    "settle_band_c": 0.25,
+    "load_step_time_s": 600,
+    "steady_window_s": 300
+  },
+  "fault_campaign": {
+    "inject_at_s": 900,
+    "detection_window_s": 400
+  }
+}

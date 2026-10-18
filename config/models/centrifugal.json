@@ -1,0 +1,53 @@
+{
+  "model_id": "CEN-2000",
+  "type": "centrifugal",
+  "display_name": "Centrifugal chiller, 2000 kW",
+  "rated_capacity_kw": 2000,
+  "cop": 6.2,
+  "capacity_control": {
+    "method": "inlet_guide_vanes",
+    "min_capacity_pct": 30,
+    "response_time_s": 12
+  },
+  "water_loop": {
+    "thermal_mass_kj_per_c": 32000,
+    "nominal_flow_kg_s": 96,
+    "initial_supply_temp_c": 12.0,
+    "flow_time_constant_s": 5
+  },
+  "condenser": {
+    "base_pressure_kpa": 700,
+    "pressure_per_capacity_pct": 4.0,
+    "time_constant_s": 30,
+    "fan_failure_rise_kpa": 600
+  },
+  "limits": {
+    "supply_temp_valid_min_c": -10,
+    "supply_temp_valid_max_c": 40,
+    "freeze_protect_c": 3.5,
+    "condenser_pressure_max_kpa": 1400,
+    "min_flow_pct": 50,
+    "capacity_residual_max_pct": 15,
+    "capacity_residual_time_s": 10
+  },
+  "model_params": {
+    "surge_margin_base_pct": 15,
+    "surge_margin_per_capacity_pct": 0.1,
+    "surge_margin_failed_pct": -10,
+    "surge_margin_min_pct": 5,
+    "surge_time_constant_s": 6
+  },
+  "sensors": [
+    "chw_supply_temp", "chw_return_temp", "chw_flow", "condenser_pressure",
+    "power", "guide_vane_position", "surge_margin"
+  ],
+  "fault_codes": {
+    "sensor_failure": "CEN-101",
+    "high_condenser_pressure": "CEN-204",
+    "low_chilled_water_flow": "CEN-207",
+    "freeze_risk": "CEN-310",
+    "compressor_protection": "CEN-415",
+    "capacity_control_fault": "CEN-512"
+  },
+  "noise": { "temperature_c": 0.02, "pressure_kpa": 2.0 }
+}
